@@ -7,6 +7,7 @@ export default {
       DEFAULT: '4px',
       'none': '0',
       'sm': '0.125rem',
+      'md': '1rem',
       'lg': '3rem',
       'large': '12px',
       'full': '9999px',

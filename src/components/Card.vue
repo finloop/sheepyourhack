@@ -1,16 +1,36 @@
 <template>
-    <div class="rounded overflow-hidden shadow-lg">
-    <img class="w-full" src="../assets/card-top.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-            <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-        </div>
+  <div class="flex flex-col overflow-hidden rounded-md w-30">
+    <img
+      class="w-full object-cover h-44"
+      src="../assets/card-top.jpg"
+      alt="Sunset in the mountains"
+    />
+    <div class="relative px-6 pt-4 pb-2">
+      <div
+        class="text-center bg-white rounded-md py-1 px-5 absolute right-3 -top-7 drop-shadow-lg"
+      >
+        <div class="text-xl font-semibold">16</div>
+        <div class="p-0 -mt-1 font-semibold">JAN</div>
+      </div>
+      <div class="text-xs">
+        <span>#rzeszów</span>
+        <span>#kraków</span>
+      </div>
+      <div class="font-bold text-sm">
+        Koncert The Weekend Kraków Tauron Arena
+      </div>
+      <div class="text-xs">
+        <i class="fa-solid fa-heart" style="color: #ff4033"></i>
+        2137
+      </div>
+      <span class="float-right text-xs font-bold">See more</span>
     </div>
+  </div>
 </template>
+
+<style scoped>
+span {
+  padding-right: 3px;
+  color: #4a5568;
+}
+</style>
