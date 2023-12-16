@@ -33,7 +33,7 @@
     <div class="bg-amber-100 rounded-tl-lg rounded-tr-lg pt-10">
       <h1 class="ml-5 text-2xl nice-text">Concerts</h1>
       <div
-        class="flex flex-no-wrap scrolling-touch-items items-start overflow-x-scroll"
+        class="flex flex-no-wrap scrolling-touch-items scrollbar-hide items-start overflow-x-scroll"
       >
         <Card
           class="flex-none w-1/2 md:w-1/3 md:pb-4 border bg-white ml-5 my-3"
