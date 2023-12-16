@@ -6,12 +6,13 @@ defineProps<{
     month: string
     tags: string[]
     image: string
+    links: string
     imageAlt: string
 }>()
 </script>
 
 <template>
-  <div class="flex flex-col overflow-hidden rounded-md w-30">
+  <a class="flex flex-col overflow-hidden rounded-md w-30" :href="links" target="_blank" rel="noreferrer">
     <img
       class="w-full object-cover h-44"
       :src="image"
@@ -27,19 +28,20 @@ defineProps<{
       <div class="text-xs">
         <!-- List tags -->
         <span
-          v-for="(tag, index) in tags"
-          :key="index"> {{ tag }}
+          v-for="tag in tags"
+          :key="tag"> {{ tag }}
         </span>
       <div class="font-bold text-sm">
-        Koncert The Weekend Kraków Tauron Arena
+        {{ title }}
       </div>
       <div class="text-xs">
         <i class="fa-solid fa-heart" style="color: #ff4033"></i>
-        2137
+        {{ likes }}
       </div>
       <span class="float-right text-xs font-bold">See more</span>
     </div>
   </div>
+</a>
 </template>
 
 <style scoped>
