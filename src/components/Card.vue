@@ -21,13 +21,15 @@ defineProps<{
       <div
         class="text-center bg-white rounded-md py-1 px-5 absolute right-3 -top-7 drop-shadow-lg"
       >
-        <div class="text-xl font-semibold"> {{  }}</div>
-        <div class="p-0 -mt-1 font-semibold">JAN</div>
+        <div class="text-xl font-semibold"> {{ day }}</div>
+        <div class="p-0 -mt-1 font-semibold"> {{ month }}</div>
       </div>
       <div class="text-xs">
-        <span>#rzeszów</span>
-        <span>#kraków</span>
-      </div>
+        <!-- List tags -->
+        <span
+          v-for="(tag, index) in tags"
+          :key="index"> {{ tag }}
+        </span>
       <div class="font-bold text-sm">
         Koncert The Weekend Kraków Tauron Arena
       </div>
